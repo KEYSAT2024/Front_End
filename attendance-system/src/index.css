@@ -1,13 +1,74 @@
+/* Theme colors */
+:root {
+  --blue: rgba(56, 94, 157, 1);
+  --green: rgba(0, 179, 136, 1);
+  --red: rgba(225, 82, 61, 1);
+  --green2: rgba(23, 203, 137, 1);
+  --blue2: rgba(47, 63, 153, 1);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#sign_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#log_in{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  width: 416px;
+  height: 620px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.23);
+}
+
+.card button {
+  width: 185px;
+  height: 96px;
+  top: 550px;
+  left: 772px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 9.199999809265137px -1px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 20px;
+}
+
+#login_btn {
+  background-color: var(--green);
+  width: Fixed (236px);
+  height: 43px;
+  top: 652px;
+  left: 747px;
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 10px;
+  gap: 10px;
 }
