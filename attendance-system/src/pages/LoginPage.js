@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
+import keysat_logo from "../../src/images/KEYSAT_red.png";
+import keyin_logo from "../../src/images/Keyin_logo.png";
 
 function LoginPage() {
+  
   return (
-    <div>
+    <div id="log_in">
+    <div class="card">
+      <img src={keysat_logo} alt="" width="240px"></img>
       <h2>Login</h2>
       <form>
         <div>
@@ -13,8 +18,10 @@ function LoginPage() {
           <label>Password:</label>
           <input type="password" />
         </div>
-        <button>Login</button>
+        <button id="login_btn">Login</button>
       </form>
+    </div>
+    <img src={keyin_logo} alt="Keyin Logo" width="140px"></img>
     </div>
   );
 }
