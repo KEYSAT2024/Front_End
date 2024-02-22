@@ -1,10 +1,9 @@
-import React from "react";
-import keysat_logo from "../../src/images/KEYSAT_red.png";
-import keyin_logo from "../../src/images/Keyin_logo.png";
+import React from 'react';
+import keysat_logo from '../../src/images/KEYSAT_red.png';
+import keyin_logo from '../../src/images/Keyin_logo.png';
 
 
 function LoginPage() {
-  
   return (
     <div id="log_in">
     <div class="card">
