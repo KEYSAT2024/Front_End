@@ -1,0 +1,963 @@
+.main-home-1-admin,
+.main-home-1-admin * {
+  box-sizing: border-box;
+}
+.main-home-1-admin {
+  background: #ffffff;
+  height: 1117px;
+  position: relative;
+  overflow: hidden;
+}
+.main-home-1-admin .side-bar {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .reports {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 116px;
+  height: 26px;
+  position: absolute;
+  left: 60px;
+  top: 373px;
+}
+.main-home-1-admin .reports2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+}
+.main-home-1-admin .calendar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 130px;
+  height: 26px;
+  position: absolute;
+  left: 60px;
+  top: 319px;
+}
+.main-home-1-admin .calendar2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+}
+.main-home-1-admin .attendance {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 158px;
+  height: 26px;
+  position: absolute;
+  left: 60px;
+  top: 261px;
+}
+.main-home-1-admin .attendance2 {
+  color: #ffffff;
+
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+}
+.main-home-1-admin .keyin-website-features-group {
+  position: absolute;
+  inset: 0;
+}
+.main-home-1-admin .keyin-logo {
+  width: 110px;
+  height: 54px;
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  object-fit: cover;
+}
+.main-home-1-admin .task-bar {
+  width: 1463px;
+  height: 71px;
+  position: absolute;
+  left: 265px;
+  top: 0px;
+  overflow: visible;
+}
+.main-home-1-admin .line-8 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 7px;
+  height: 0px;
+  position: absolute;
+  left: 1697px;
+  top: 36.18px;
+  transform-origin: 0 0;
+  transform: rotate(-47.73deg) scale(1, 1);
+}
+.main-home-1-admin .chat {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: calc(50% - 844px);
+  top: calc(50% - 358.5px);
+  overflow: visible;
+}
+.main-home-1-admin .admin {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 1617px;
+  top: 20px;
+  width: 80px;
+  height: 40px;
+}
+.main-home-1-admin .search-bar {
+  border-radius: 0px;
+  width: 331px;
+  height: 48px;
+  position: absolute;
+  left: 1060px;
+  top: 12px;
+  overflow: visible;
+}
+.main-home-1-admin .zoom-in {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 1349px;
+  top: 23px;
+}
+.main-home-1-admin .icon-zoom-in {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.main-home-1-admin .icon-search-instance {
+  height: auto !important;
+  position: absolute !important;
+  right: -100% !important;
+  left: 100% !important;
+  width: 100% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+  height: 100% !important;
+  transform: translate(-24px, 0px) !important;
+}
+.main-home-1-admin .line-3 {
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  left: 290px;
+  top: 47px;
+  overflow: visible;
+}
+.main-home-1-admin .line-2 {
+  width: 35px;
+  height: 1px;
+  position: absolute;
+  left: 290px;
+  top: 25px;
+  overflow: visible;
+}
+.main-home-1-admin .line-1 {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 290px;
+  top: 36px;
+  overflow: visible;
+}
+.main-home-1-admin .line-7 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 7px;
+  height: 0px;
+  position: absolute;
+  left: 1692px;
+  top: 31px;
+  transform-origin: 0 0;
+  transform: rotate(47.726deg) scale(1, 1);
+}
+.main-home-1-admin .ellipse-2 {
+  background: #000000;
+  border-radius: 50%;
+  width: 53px;
+  height: 47px;
+  position: absolute;
+  left: 1547px;
+  top: 12px;
+}
+.main-home-1-admin .kc {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1558px;
+  top: 21px;
+  width: 32px;
+  height: 26px;
+}
+.main-home-1-admin .keyin-logo2 {
+  width: 141px;
+  height: 54px;
+  position: absolute;
+  left: 1547px;
+  top: 1046px;
+  object-fit: cover;
+}
+.main-home-1-admin .powered-by {
+  color: #000000;
+
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1547px;
+  top: 1019px;
+  width: 155px;
+  height: 27px;
+}
+.main-home-1-admin .home-alt {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: calc(50% - 841px);
+  top: calc(50% - 466.5px);
+}
+.main-home-1-admin .icon-home-instance {
+  height: auto !important;
+  position: absolute !important;
+  right: 0% !important;
+  left: 0% !important;
+  width: 100% !important;
+  bottom: 0% !important;
+  top: 0% !important;
+  height: 100% !important;
+}
+.main-home-1-admin .rectangle {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  position: absolute;
+  right: 37.5%;
+  left: 37.5%;
+  width: 25%;
+  bottom: 8.33%;
+  top: 58.33%;
+  height: 33.33%;
+}
+.main-home-1-admin .rectangle-3 {
+  width: 1214px;
+  height: 110px;
+  position: absolute;
+  left: 371px;
+  top: 372px;
+  overflow: visible;
+}
+.main-home-1-admin .rectangle-2 {
+  background: #f3f3f3;
+  width: 1214px;
+  height: 232px;
+  position: absolute;
+  left: 371px;
+  top: 474px;
+}
+.main-home-1-admin .line-24 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 372px;
+  top: 511.11px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .line-25 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 372px;
+  top: 566.64px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .line-26 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 372px;
+  top: 614.54px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .line-27 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 372px;
+  top: 663.54px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .line-22 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 374px;
+  top: 704.91px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .line-20 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 1437px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-23 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 1583px;
+  top: 474.09px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-14 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 771px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-13 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 629px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-19 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 1314px;
+  top: 474.09px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-18 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 1180px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-17 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 1045px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-16 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 372px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-15 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 231.92px;
+  height: 0px;
+  position: absolute;
+  left: 914px;
+  top: 474.09px;
+  transform-origin: 0 0;
+  transform: rotate(89.506deg) scale(1, 1);
+}
+.main-home-1-admin .line-21 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1214px;
+  height: 0px;
+  position: absolute;
+  left: 374px;
+  top: 473px;
+  transform-origin: 0 0;
+  transform: rotate(0.044deg) scale(1, 1);
+}
+.main-home-1-admin .rectangle-4 {
+  background: #d9d9d9;
+  width: 669px;
+  height: 37px;
+  position: absolute;
+  left: 914px;
+  top: 372px;
+}
+.main-home-1-admin .line-30 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 1180px;
+  top: 372px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.main-home-1-admin .line-29 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 1045px;
+  top: 372px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.main-home-1-admin .line-28 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 915px;
+  top: 372px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.main-home-1-admin .line-32 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 1438px;
+  top: 372px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.main-home-1-admin .line-31 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 1314px;
+  top: 372px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.main-home-1-admin .date-time-slot-campus {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 777px;
+  top: 381px;
+  width: 137px;
+  height: 101px;
+}
+.main-home-1-admin .group {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 636px;
+  top: 439px;
+  width: 137px;
+  height: 30px;
+}
+.main-home-1-admin .student {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 383px;
+  top: 436px;
+  width: 227px;
+  height: 26px;
+}
+.main-home-1-admin .instructor-example-instructor {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 1247px;
+  top: 326px;
+  width: 390px;
+  height: 29px;
+}
+.main-home-1-admin .a-absent-p-present-comments {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 377px;
+  top: 743px;
+  width: 396px;
+  height: 91px;
+}
+.main-home-1-admin
+  .please-note-each-friday-this-form-will-be-emailed-to-attendance-keyin-com-please-keep-a-copy-of-your-records {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 376px;
+  top: 880px;
+  width: 1206px;
+  height: 51px;
+}
+.main-home-1-admin .keyin-college {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 783px;
+  top: 92px;
+  width: 427px;
+  height: 76px;
+}
+.main-home-1-admin .date-january-2-april-19th-2023 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 698px;
+  top: 173px;
+  width: 684px;
+  height: 50px;
+}
+.main-home-1-admin .course-example-course-software-development {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 373px;
+  top: 319px;
+  width: 577px;
+  height: 36px;
+}
+.main-home-1-admin .week-of {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 373px;
+  top: 286px;
+  width: 325px;
+  height: 33px;
+}
+.main-home-1-admin .cohort-software-development-8-semester-4 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 373px;
+  top: 252px;
+  width: 556px;
+  height: 30px;
+}
+.main-home-1-admin .line-33 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 670px;
+  height: 0px;
+  position: absolute;
+  left: 916px;
+  top: 372px;
+}
+.main-home-1-admin .dashboard {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: absolute;
+  left: 64px;
+  top: 99px;
+  width: 117px;
+  height: 26px;
+}
+.main-home-1-admin .activity {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: absolute;
+  left: 62px;
+  top: 152px;
+  width: 94px;
+}
+.main-home-1-admin .chat2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: absolute;
+  left: 62px;
+  top: 205px;
+  width: 90px;
+  height: 29px;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin .settings {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  position: absolute;
+  left: 69px;
+  top: 788px;
+  width: 112px;
+  height: 29px;
+}
+.main-home-1-admin .side-bar2 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin .home-alt-instance {
+  position: absolute !important;
+  left: calc(50% - 841px) !important;
+  top: calc(50% - 466.5px) !important;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine2 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin .side-bar3 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights3 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance2 {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin .side-bar4 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine3 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights4 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance3 {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine4 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine5 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin .side-bar5 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights5 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance4 {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine6 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin .side-bar6 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights6 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance5 {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin .side-bar7 {
+  width: 265px;
+  height: 1117px;
+  position: absolute;
+  left: 0px;
+  top: 0.5px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine7 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
+.main-home-1-admin
+  .interface-lighting-light-bulb-lighting-light-incandescent-bulb-lights7 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+  overflow: visible;
+}
+.main-home-1-admin .keyin-logo3 {
+  width: 141px;
+  height: 54px;
+  position: absolute;
+  left: 1547px;
+  top: 1046px;
+  object-fit: cover;
+  overflow: visible;
+}
+.main-home-1-admin .keysat-red {
+  width: 110px;
+  height: 60px;
+  position: absolute;
+  left: 48px;
+  top: 20px;
+  object-fit: cover;
+  overflow: visible;
+}
+.main-home-1-admin .chat-instance6 {
+  position: absolute !important;
+  left: calc(50% - 844px) !important;
+  top: calc(50% - 358.5px) !important;
+}
+.main-home-1-admin
+  .interface-setting-cog-work-loading-cog-gear-settings-machine8 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 22px;
+  top: 783px;
+  overflow: visible;
+}
