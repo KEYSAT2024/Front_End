@@ -48,6 +48,7 @@ code {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
   box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.23);
 }
 
@@ -76,6 +77,34 @@ code {
   padding: 12px, 24px, 12px, 24px;
   border-radius: 10px;
   gap: 10px;
+  color: white;
+}
+
+.email-password input {
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  outline: none;
+  padding: 8px 0; 
+  width: 100%; 
+  margin-bottom: 30px; 
+  font-size: 16px; 
+}
+
+.Power{
+  color: rgba(0, 0, 0, 0.62);
+  text-align: left;
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+
+.Stat{
+  padding-bottom: 20px;
+}
+
+.PSign{
+  padding-bottom: 20px;
 }
 
 .navbar {
