@@ -82,28 +82,28 @@ code {
 
 .email-password input {
   border: none;
-  border-bottom: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;
   outline: none;
-  padding: 8px 0; 
-  width: 100%; 
-  margin-bottom: 30px; 
-  font-size: 16px; 
+  padding: 8px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
-.Power{
+.Power {
   color: rgba(0, 0, 0, 0.62);
   text-align: left;
-  font-family: "Raleway-Regular", sans-serif;
+  font-family: 'Raleway-Regular', sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: relative;
 }
 
-.Stat{
+.Stat {
   padding-bottom: 20px;
 }
 
-.PSign{
+.PSign {
   padding-bottom: 20px;
 }
 
@@ -113,10 +113,10 @@ code {
   flex-direction: column;
   align-items: center;
   width: 256px;
-  height: 100vh;
+  height: calc(100vh - 71px);
   background: rgba(0, 179, 136, 1);
   position: fixed;
-  top: 0;
+  top: 71px;
   left: 0;
 }
 
@@ -125,7 +125,6 @@ code {
   height: 70px;
   position: absolute;
   bottom: 28px;
-  margin-right: 50px;
 }
 
 .navbar hr {
@@ -137,9 +136,9 @@ code {
 }
 
 .main-content {
-  padding-top: 30px;
+  padding-top: 34px;
   padding-left: 50px;
-  height: 100vh;
+  height: calc(100vh - 71px);
   margin-left: 256px;
 }
 
@@ -149,4 +148,18 @@ code {
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.top-bar {
+  background: rgba(0, 0, 0, 0.09);
+  height: 71px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar img {
+  height: 50px;
 }
