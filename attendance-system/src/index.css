@@ -82,28 +82,28 @@ code {
 
 .email-password input {
   border: none;
-  border-bottom: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc;
   outline: none;
-  padding: 8px 0; 
-  width: 100%; 
-  margin-bottom: 30px; 
-  font-size: 16px; 
+  padding: 8px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
-.Power{
+.Power {
   color: rgba(0, 0, 0, 0.62);
   text-align: left;
-  font-family: "Raleway-Regular", sans-serif;
+  font-family: 'Raleway-Regular', sans-serif;
   font-size: 14px;
   font-weight: 400;
   position: relative;
 }
 
-.Stat{
+.Stat {
   padding-bottom: 20px;
 }
 
-.PSign{
+.PSign {
   padding-bottom: 20px;
 }
 
