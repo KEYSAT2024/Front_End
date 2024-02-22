@@ -1,16 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function AdminDashboardPage() {
+function AdminCoursesPage() {
   return (
-    <div>
+    <>
       <Navbar></Navbar>
       <div className='main-content'>
-        <h2>Admin Dashboard</h2>
-        <p>Welcome, Admin!</p>
+        <h2>Add / Remove Courses</h2>
       </div>
-    </div>
+    </>
   );
 }
 
-export default AdminDashboardPage;
+export default AdminCoursesPage;
