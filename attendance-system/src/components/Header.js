@@ -1,10 +1,10 @@
 import React from "react";
-import KEYSAT_Red from "../images/KEYSAT_red.png";
+import KEYSAT_Transparent from "../images/KEYSAT_red_transparent_temp.png";
 
 function Header() {
     return (
         <header className="header">
-            <img src={KEYSAT_Red} alt="KEYSAT" />
+            <img src={KEYSAT_Transparent} alt="KEYSAT" />
             <button>Sign Out</button>
         </header>
     );

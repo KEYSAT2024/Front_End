@@ -5,6 +5,7 @@
   --red: rgba(225, 82, 61, 1);
   --green2: rgba(23, 203, 137, 1);
   --blue2: rgba(47, 63, 153, 1);
+  --grey: rgba(232, 232, 232, 1);
 }
 
 * {
@@ -149,4 +150,11 @@ code {
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.header {
+  background-color: var(--grey);
+  height: 6%;
+  width: 100%;
+  display: flex;
 }
