@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 
 function StudentDashboardPage() {
   return (
     <div>
       <Header></Header>
-      <h2>Student Dashboard</h2>
-      <p>Welcome, Student!!!!</p>
+      <Navbar>
+      </Navbar>
     </div>
   );
 }
