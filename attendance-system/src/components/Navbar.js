@@ -5,7 +5,6 @@ function Navbar({ children }) {
   return (
     <nav className='navbar'>
       {children}
-      <hr />
       <img src={keyin_logo} alt='keyin logo' />
     </nav>
   );
