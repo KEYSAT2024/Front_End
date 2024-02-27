@@ -159,7 +159,6 @@ code {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  
   padding-right: 2%;
 }
 
@@ -173,6 +172,8 @@ code {
 }
 
 .sign-out {
+  display: flex;
+  align-items: center;
   background-color: var(--green);
   color: white;
   border-radius: 10px;
@@ -182,5 +183,4 @@ code {
   padding: 0 12px 0 12px;
   font-size: 12px;
   height: 35px;
-  /* gap: 10px; */
 }
