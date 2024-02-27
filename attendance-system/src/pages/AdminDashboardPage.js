@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/auth";
@@ -8,6 +9,7 @@ function AdminDashboardPage() {
   console.log(auth.user);
   return (
     <div>
+      <Header></Header>
       <Navbar>
         <Link to="/admin-dashboard" className="nav-link">
           Admin Dashboard
