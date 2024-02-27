@@ -2,9 +2,9 @@ import React from "react";
 import keysat_logo from "../../src/images/KEYSAT_red.png";
 import keyin_logo from "../../src/images/Keyin_logo.png";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from "../auth/auth";
+import axios from "axios";
 
 function LoginPage() {
   const [data, setData] = useState({
@@ -13,7 +13,6 @@ function LoginPage() {
   });
 
   const auth = useAuth();
-
   const navigate = useNavigate();
 
   const changeHandler = (e) => {
@@ -22,12 +21,35 @@ function LoginPage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (auth.login(data.username, data.password) === "admin") {
+    try {
+      const { username, password } = data;
+
+      // const response =  {
+      //   authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
+      //   roles: ["ROLE_ADMIN", "ROLE_INSTUCTOR"],
+      //   message: "Logged in successfully.",
+      // };
+      const response = await auth.login(data.username, data.password);
+      const authHeader = response.authorization;
+      const roles = JSON.stringify(response.roles);
+      localStorage.setItem("auth", authHeader); // Store the token
+      localStorage.setItem("roles", roles);
+
+      onLoginSuccess();
+    } catch (error) {
+      // console.error("Login error:", error);
+    }
+  };
+
+  const onLoginSuccess = () => {
+    const authRoles = JSON.parse(localStorage.getItem("roles"));
+    console.log(authRoles);
+    if (authRoles.includes("ROLE_ADMIN")) {
       navigate("/admin-dashboard");
-    } else if (auth.login(data.username, data.password) === "student") {
+    } else if (authRoles.includes("ROLE_INSTRUCTOR")) {
+      navigate("/instructor-dashboard");
+    } else if (authRoles.includes("ROLE_STUDENT")) {
       navigate("/student-dashboard");
-    } else {
-      alert("Invalid username or password");
     }
   };
 
@@ -48,7 +70,7 @@ function LoginPage() {
                 onChange={changeHandler}
               />
             </div>
-            <break></break>
+            {/* <break></break> */}
             <div>
               <input
                 className="password"

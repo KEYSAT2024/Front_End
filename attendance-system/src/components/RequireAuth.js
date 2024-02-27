@@ -1,11 +1,15 @@
 import { useAuth } from "../auth/auth";
 import { Navigate } from "react-router-dom";
 
-export const RequireAuth = ({ children }) => {
-  const auth = useAuth();
+const authToken = () => {
+  const token = localStorage.getItem("auth");
+  const roles = JSON.parse(localStorage.getItem("roles"));
+  return { token, roles };
+};
+export const RequireAuth = ({ children, allowedRoles }) => {
+  const { token, roles } = authToken();
 
-  if ((!auth.user, !auth.password)) {
-    return <Navigate to="/" />;
-  }
-  return children;
+  const isAuthorized =
+    roles && roles?.some((role) => allowedRoles.includes(role));
+  return token && isAuthorized ? children : <Navigate to="/" />;
 };

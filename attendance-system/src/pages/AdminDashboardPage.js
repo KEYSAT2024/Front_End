@@ -1,11 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import { useAuth } from "../auth/auth";
 
 function AdminDashboardPage() {
-  const auth = useAuth();
-  console.log(auth.user);
+  const username = localStorage.getItem("username");
   return (
     <div>
       <Navbar>
@@ -18,7 +16,7 @@ function AdminDashboardPage() {
       </Navbar>
       <div className="main-content">
         <h2>Admin Dashboard</h2>
-        <p>Welcome, {auth.user}!</p>
+        <p>Welcome, {username}!</p>
       </div>
     </div>
   );
