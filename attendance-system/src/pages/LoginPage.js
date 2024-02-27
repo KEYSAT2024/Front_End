@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useAuth } from "../auth/auth";
 import axios from "axios";
 
-
 function LoginPage() {
   const [data, setData] = useState({
     username: "",
@@ -23,8 +22,6 @@ function LoginPage() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const { username, password } = data;
-
       // const response =  {
       //   authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
       //   roles: ["ROLE_ADMIN", "ROLE_INSTUCTOR"],
@@ -38,13 +35,12 @@ function LoginPage() {
 
       onLoginSuccess();
     } catch (error) {
-      // console.error("Login error:", error);
+      console.error("Login error:", error);
     }
   };
 
   const onLoginSuccess = () => {
     const authRoles = JSON.parse(localStorage.getItem("roles"));
-    console.log(authRoles);
     if (authRoles.includes("ROLE_ADMIN")) {
       navigate("/admin-dashboard");
     } else if (authRoles.includes("ROLE_INSTRUCTOR")) {

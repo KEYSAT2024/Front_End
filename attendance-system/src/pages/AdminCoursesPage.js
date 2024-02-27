@@ -2,8 +2,13 @@ import React from "react";
 import keysatRedLogo from "../../src/images/KEYSAT_red.png";
 import keyin_logo from "../../src/images/Keyin_logo.png";
 import styles from "../AdminCoursesPage.module.css";
+import { useAuth } from "../auth/auth";
 
 export const AdminCoursesPage = ({ className, ...props }) => {
+  const auth = useAuth();
+  const handleLogout = (event) => {
+    auth.logout();
+  };
   return (
     <div className={styles.adminCourses + " " + className}>
       <div className={styles.header}>
@@ -152,7 +157,9 @@ export const AdminCoursesPage = ({ className, ...props }) => {
       <div className={styles.line36}></div>
       <div className={styles.line45}></div>
       <div className={styles.signOutButton}>
-        <div className={styles.signOut}>Sign Out </div>
+        <div onClick={handleLogout} className={styles.signOut}>
+          Sign Out{" "}
+        </div>
       </div>
       <div style={{ clear: "both" }}></div> {/* Clear the float */}
     </div>
