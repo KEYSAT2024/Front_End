@@ -159,26 +159,28 @@ code {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
- 
   padding-right: 2%;
 }
 
 .header-logo {
-  margin-left: 0px;
+  /* margin-left: 0px;
   position: relative;
   height: 60px;
-  
+   */
+  margin: 3px;
+  object-fit: cover;
 }
 
 .sign-out {
+  display: flex;
+  align-items: center;
   background-color: var(--green);
   color: white;
   border-radius: 10px;
   font-weight: bold;
   border: none;
-  margin: 14px 0 5px 0;
+  margin: 2px 0 5px 0;
   padding: 0 12px 0 12px;
   font-size: 12px;
   height: 35px;
-  /* gap: 10px; */
 }
