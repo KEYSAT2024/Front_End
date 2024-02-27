@@ -159,13 +159,15 @@ code {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding-left: 2%;
+ 
   padding-right: 2%;
 }
 
 .header-logo {
-  object-fit: cover;
-  margin: 3px;
+  margin-left: 0px;
+  position: relative;
+  height: 60px;
+  
 }
 
 .sign-out {
@@ -174,7 +176,9 @@ code {
   border-radius: 10px;
   font-weight: bold;
   border: none;
-  margin: 5px 0 5px 0;
-  padding: 0 10px 0 10px;
-  gap: 10px;
+  margin: 14px 0 5px 0;
+  padding: 0 12px 0 12px;
+  font-size: 12px;
+  height: 35px;
+  /* gap: 10px; */
 }
