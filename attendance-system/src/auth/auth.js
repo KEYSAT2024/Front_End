@@ -1,5 +1,6 @@
 import { useState, createContext, useContext } from "react";
 import axios from "axios";
+import { Link, redirect } from "react-router-dom";
 
 const AuthContext = createContext(null);
 
@@ -46,7 +47,9 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    setUser(null);
+    console.log("logging out");
+    localStorage.clear();
+    window.location.href = "/";
   };
 
   return (
