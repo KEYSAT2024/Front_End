@@ -1,4 +1,3 @@
-import { useAuth } from "../auth/auth";
 import { Navigate } from "react-router-dom";
 
 const authToken = () => {
