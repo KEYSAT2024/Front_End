@@ -5,6 +5,7 @@
   --red: rgba(225, 82, 61, 1);
   --green2: rgba(23, 203, 137, 1);
   --blue2: rgba(47, 63, 153, 1);
+  --grey: rgba(232, 232, 232, 1);
 }
 
 * {
@@ -115,7 +116,7 @@ code {
   width: 256px;
   height: 100vh;
   background: rgba(0, 179, 136, 1);
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
 }
@@ -149,4 +150,31 @@ code {
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.header {
+  background-color: var(--grey);
+  height: 6vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.header-logo {
+  object-fit: cover;
+  margin: 3px;
+}
+
+.sign-out {
+  background-color: var(--green);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  margin: 5px 0 5px 0;
+  padding: 0 10px 0 10px;
+  gap: 10px;
 }
