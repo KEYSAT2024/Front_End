@@ -19,10 +19,14 @@ function AdminDashboardPage() {
           Students and Instructors
         </Link>
       </Navbar>
+      <top>
+      <center>
       <div className="main-content">
         <h2>Admin Dashboard</h2>
         <p>Welcome, {username}!</p>
       </div>
+      </center>
+      </top>
     </div>
   );
 }

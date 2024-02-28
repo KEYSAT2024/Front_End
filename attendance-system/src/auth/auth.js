@@ -1,6 +1,6 @@
-import { useState, createContext, useContext } from "react";
-import axios from "axios";
-import { Link, redirect } from "react-router-dom";
+import { useState, createContext, useContext } from 'react';
+import axios from 'axios';
+import { Link, redirect } from 'react-router-dom';
 
 const AuthContext = createContext(null);
 
@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (user, password) => {
     // store username in local storage. Probably replace this
-    localStorage.setItem("username", user.toString());
+    localStorage.setItem('username', user.toString());
 
     // API call
 
@@ -22,43 +22,50 @@ export const AuthProvider = ({ children }) => {
 
     // returns temp headers for testing
     // replace with API call
-    if (user.toString() === "admin" && password.toString() === "admin")
+    if (user.toString() === 'admin' && password.toString() === 'admin')
       return {
-        authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
-        roles: ["ROLE_ADMIN", "ROLE_INSTUCTOR"],
-        message: "Logged in successfully.",
+        authorization: 'Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==',
+        roles: ['ROLE_ADMIN', 'ROLE_INSTUCTOR'],
+        message: 'Logged in successfully.',
       };
-    else if (user.toString() === "student" && password.toString() === "student")
+    else if (user.toString() === 'student' && password.toString() === 'student')
       return {
-        authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
-        roles: ["ROLE_STUDENT"],
-        message: "Logged in successfully.",
+        authorization: 'Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==',
+        roles: ['ROLE_STUDENT'],
+        message: 'Logged in successfully.',
       };
     else if (
-      user.toString() === "instructor" &&
-      password.toString() === "instructor"
+      user.toString() === 'instructor' &&
+      password.toString() === 'instructor'
     )
       return {
-        authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
-        roles: ["ROLE_INSTRUCTOR"],
-        message: "Logged in successfully.",
+        authorization: 'Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==',
+        roles: ['ROLE_INSTRUCTOR'],
+        message: 'Logged in successfully.',
       };
-    else console.log("Invalid username or password");
+    else console.log('Invalid username or password');
   };
 
   const logout = () => {
-    console.log("logging out");
+    console.log('logging out');
     localStorage.clear();
-    window.location.href = "/";
+    window.location.href = '/';
   };
 
   return (
     <AuthContext.Provider value={{ user, password, login, logout }}>
-      {children};
+      {children}
     </AuthContext.Provider>
   );
 };
 
 export const useAuth = () => {
   return useContext(AuthContext);
+};
+
+export const RequireAuth = ({ children, allowedRoles }) => {
+  const { token, roles } = useAuth();
+  const isAuthorized =
+    roles && roles?.some((role) => allowedRoles.includes(role));
+  return token && isAuthorized ? children : <Link to="/" />;
 };
