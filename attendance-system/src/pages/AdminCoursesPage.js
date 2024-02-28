@@ -29,6 +29,9 @@ function AdminCoursesPage() {
         <Link to="/courses" className="nav-link">
           Courses
         </Link>
+        <Link to="/admin-add-remove-users" className="nav-link">
+          Students and Instructors
+        </Link>
       </Navbar>
       <top>
         <center>
