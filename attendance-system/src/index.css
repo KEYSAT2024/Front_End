@@ -116,8 +116,8 @@ code {
   width: 256px;
   height: 94vh;
   background: rgba(0, 159, 121, 1);
-  /* position: fixed; */
-  top: 0;
+  position: fixed;
+  top: 6vh;
   left: 0;
   overflow: hidden;
 }
@@ -127,7 +127,7 @@ code {
   height: 70px;
   position: absolute;
   bottom: 28px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .navbar hr {
@@ -139,12 +139,10 @@ code {
 }
 
 .main-content {
-  /* padding-top: 30px;
-  padding-left: 50px; */
-  width: 100% - 256px;
+  padding-top: 50px;
+  padding-left: 50px;
+  width: 100%;
   height: 94vh;
-  /* margin-left: 256px; */
-
 }
 
 .nav-link {
@@ -206,4 +204,10 @@ code {
   padding: 0 12px 0 12px;
   font-size: 12px;
   height: 35px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 256px auto;
+  grid-template-rows: 94vh;
 }
