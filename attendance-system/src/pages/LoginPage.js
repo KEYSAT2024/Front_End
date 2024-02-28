@@ -16,17 +16,12 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const changeHandler = (e) => {
-    setData({ ...data, [e.target.name.toString()]: [e.target.value] });
+    setData({ ...data, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      // const response =  {
-      //   authorization: "Basic c3VwZXJ1c2VyMjpwYXNzd29yZA==",
-      //   roles: ["ROLE_ADMIN", "ROLE_INSTUCTOR"],
-      //   message: "Logged in successfully.",
-      // };
       const response = await auth.login(data.username, data.password);
       const authHeader = response.authorization;
       const roles = JSON.stringify(response.roles);
@@ -72,7 +67,6 @@ function LoginPage() {
                 onChange={changeHandler}
               />
             </div>
-            {/* <break></break> */}
             <div>
               <input
                 className='password'

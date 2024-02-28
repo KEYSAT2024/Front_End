@@ -1,5 +1,4 @@
 import React from "react";
-import axios from 'axios';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import StudentDashboardPage from "./pages/StudentDashboardPage";
@@ -10,8 +9,8 @@ import { RequireAuth } from "./components/RequireAuth";
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
+    <Router>
+      <AuthProvider>
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route
@@ -39,8 +38,8 @@ function App() {
             }
           />
         </Routes>
-      </Router>
-    </AuthProvider>
+      </AuthProvider>
+    </Router>
   );
 }
 
