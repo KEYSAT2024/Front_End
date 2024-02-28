@@ -16,10 +16,12 @@ function AdminDashboardPage() {
           Courses
         </Link>
       </Navbar>
+      <center>
       <div className="main-content">
         <h2>Admin Dashboard</h2>
         <p>Welcome, {username}!</p>
       </div>
+      </center>
     </div>
   );
 }
