@@ -15,6 +15,9 @@ function AdminDashboardPage() {
         <Link to="/courses" className="nav-link">
           Courses
         </Link>
+        <Link to="/admin-add-remove-users" className="nav-link">
+          Students and Instructors
+        </Link>
       </Navbar>
       <div className="main-content">
         <h2>Admin Dashboard</h2>

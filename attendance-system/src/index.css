@@ -141,17 +141,22 @@ code {
 .main-content {
   /* padding-top: 30px;
   padding-left: 50px; */
-  width: 100% - 256px;
-  height: 94vh;
+  /* width: calc(100% - 256px);
+  height: 94vh; */
   /* margin-left: 256px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Change to 100vh */
+  margin-left: 256px; /* Adjust margin to push content away from the navbar */
 
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 20px;
+  /* font-weight: 700; */
   margin-bottom: 30px;
   position: relative;
   padding-right: 100px;
@@ -207,3 +212,124 @@ code {
   font-size: 12px;
   height: 35px;
 }
+
+
+/* Add/Remove Users Page */
+.addremove-container {
+  display: flex;
+  flex: column;
+}
+
+.student-section {
+  height: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.student-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.add-student-form {
+  margin-top: 20px;
+}
+
+.student-form label,
+.student-form label {
+  margin-bottom: 5px;
+}
+
+.student-form input,
+.instructor-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+}
+
+.student-form button,
+.instructor-form button {
+  padding: 8px 12px;
+  background-color: rgba(0, 159, 121, 1);
+  color:white;
+  border: 1px solid rgba(0, 159, 121, 1);
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.student-form button:hover,
+.instructor-form button:hover {
+  background-color: white;
+  color: rgba(0, 159, 121, 1);
+  border: 1px solid rgba(0, 159, 121, 1);
+}
+
+.instructor-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Add/Remove Table */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling if table content exceeds container width */
+  padding-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merge table borders */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add bottom border to each cell */
+}
+
+th {
+  background-color: #f2f2f2; /* Gray background for header cells */
+}
+
+
+
+/* Button styles for table rows */
+/* Button styles for table rows */
+table button {
+  padding: 8px 12px;
+  background-color: rgba(0, 159, 121, 1);
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  width: 80px; /* Adjust width as needed */
+  margin-right: 5px; /* Add margin between buttons */
+  border: 1px solid rgba(0, 159, 121, 1);
+}
+
+table button:first-child {
+  border-top-left-radius: 5px; /* Top-left rounded corner for the first button */
+  border-bottom-left-radius: 5px; /* Bottom-left rounded corner for the first button */
+}
+
+table button:last-child {
+  border-top-right-radius: 5px; /* Top-right rounded corner for the last button */
+  border-bottom-right-radius: 5px; /* Bottom-right rounded corner for the last button */
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+table button:hover {
+  background-color: white;
+  color: rgba(0, 159, 121, 1);
+  border: 1px solid rgba(0, 159, 121, 1);
+}
+
+
+
+
