@@ -13,12 +13,12 @@ function StudentDashboardPage() {
       <div className='container'>
         <Header></Header>
         <Navbar>
-          <Link
-            to='/student-dashboard'
-            className='nav-link'
-          >
-            <BsPencilSquare /> Attendance
-          </Link>
+        <Link to='/student-dashboard' className='nav-link'>
+  <span style={{ display: 'flex', alignItems: 'center' }}>
+    <BsPencilSquare style={{ marginRight: '5px' }} /> Attendance
+  </span>
+</Link>
+
         </Navbar>
         <div className='main-content'>
           <h2>Student Dashboard</h2>
