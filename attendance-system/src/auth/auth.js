@@ -67,9 +67,3 @@ export const AuthProvider = ({ children }) => {
 export const useAuth = () => {
   return useContext(AuthContext);
 };
-
-export const RequireAuth = ({ children, allowedRoles }) => {
-  const { user } = useAuth();
-  const isAuthorized = user && user.roles.some(role => allowedRoles.includes(role));
-  return isAuthorized ? children : <Link to="/" />;
-};
