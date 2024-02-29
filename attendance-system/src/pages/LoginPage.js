@@ -7,16 +7,24 @@ import { useAuth } from '../auth/auth';
 import axios from 'axios';
 
 function LoginPage() {
-  const [data, setData] = useState({
-    username: '',
-    password: '',
-  });
+//   const [data, setData] = useState({
+//    username: '',
+//    password: '',
+//  });
 
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const auth = useAuth();
   const navigate = useNavigate();
 
-  const changeHandler = (e) => {
-    setData({ ...data, [e.target.name.toString()]: [e.target.value] });
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
   };
 
   const handleSubmit = async (event) => {
@@ -27,15 +35,20 @@ function LoginPage() {
       //   roles: ["ROLE_ADMIN", "ROLE_INSTUCTOR"],
       //   message: "Logged in successfully.",
       // };
-      const response = await auth.login(data.username, data.password);
-      const authHeader = response.authorization;
-      const roles = JSON.stringify(response.roles);
-      localStorage.setItem('auth', authHeader); // Store the token
+      //const response = await auth.login(data.username, data.password);
+      const response = await axios.post('http://127.0.0.1:8080/auth/login', {
+        username,
+        password,
+      });
+      const authHeader = response.headers['authorization'];
+      const roles = JSON.stringify(response.data.roles);
+      localStorage.setItem('authorization', authHeader); // Store the token
       localStorage.setItem('roles', roles);
 
       onLoginSuccess();
     } catch (error) {
       console.error('Login error:', error);
+      setError('Failed to login');
     }
   };
 
@@ -44,8 +57,8 @@ function LoginPage() {
     if (authRoles.includes('ROLE_ADMIN')) {
       navigate('/admin-dashboard');
     } else if (authRoles.includes('ROLE_INSTRUCTOR')) {
-      navigate('/instructor-dashboard');
-    } else if (authRoles.includes('ROLE_STUDENT')) {
+      navigate('/courses');
+    } else if (authRoles.includes('ROLE_USER')) {
       navigate('/student-dashboard');
     }
   };
@@ -67,9 +80,9 @@ function LoginPage() {
                 className='email'
                 type='text'
                 name='username'
-                value={data.username}
+                value={username}
                 placeholder='Username'
-                onChange={changeHandler}
+                onChange={handleUsernameChange}
               />
             </div>
             {/* <break></break> */}
@@ -79,8 +92,8 @@ function LoginPage() {
                 type='password'
                 placeholder='Password'
                 name='password'
-                value={data.password}
-                onChange={changeHandler}
+                value={password}
+                onChange={handlePasswordChange}
               />
             </div>
           </div>
