@@ -2,7 +2,7 @@ import { BsExclamationOctagon } from "react-icons/bs";
 import { Navigate } from "react-router-dom";
 
 const authToken = () => {
-  const token = localStorage.getItem("auth");
+  const token = localStorage.getItem("authorization");
   const roles = JSON.parse(localStorage.getItem("roles"));
   return { token, roles };
 };
