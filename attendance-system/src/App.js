@@ -18,7 +18,7 @@ function App() {
           <Route
             path="/student-dashboard"
             element={
-              <RequireAuth allowedRoles={["ROLE_STUDENT"]}>
+              <RequireAuth allowedRoles={["ROLE_USER"]}>
                 <StudentDashboardPage />
               </RequireAuth>
             }
