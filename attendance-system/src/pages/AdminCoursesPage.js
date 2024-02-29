@@ -3,6 +3,10 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
+import { IoHomeOutline } from "react-icons/io5";
+import { IoNewspaperOutline } from "react-icons/io5";
+import { FaPlusMinus } from "react-icons/fa6";
+
 function CourseTable({ courses, handleDeleteCourse }) {
   return (
     <div className="table-container">
@@ -56,17 +60,25 @@ function AdminAddRemoveCourses() {
     <div>
       <Header />
       <div className="addremove-container">
-        <Navbar>
-          <Link to="/admin-dashboard" className="nav-link">
-            Admin Dashboard
-          </Link>
-          <Link to="/courses" className="nav-link">
-            Courses
-          </Link>
-          <Link to="/admin-add-remove-users" className="nav-link">
-            Students and Instructors
-          </Link>
-        </Navbar>
+      <Navbar>
+              <Link to="/admin-dashboard" className="nav-link">
+              <span style={{ display: 'flex', alignItems: 'center' }}>
+               <IoHomeOutline style={{ marginRight: "5px" }} /> Admin Dashboard
+               </span>
+              </Link>
+
+              <Link to="/courses" className="nav-link">
+              <span style={{ display: 'flex', alignItems: 'center' }}>
+              <IoNewspaperOutline style={{ marginRight: "5px" }} />Courses
+              </span>
+              </Link>
+
+              <Link to="/admin-add-remove-users" className="nav-link">
+              <span style={{ display: 'flex', alignItems: 'center' }}>
+              <FaPlusMinus style={{ marginRight: "5px" }}/>Students and Instructors
+              </span>
+              </Link>
+            </Navbar>
 
         <div className="course-section">
           <h1>Add/Remove Courses</h1>

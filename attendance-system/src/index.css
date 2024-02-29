@@ -126,7 +126,7 @@ code {
   width: 141px;
   height: 70px;
   position: absolute;
-  bottom: 28px;
+  bottom: 20px;
   margin-left: 50px;
 }
 
@@ -252,7 +252,7 @@ th {
   margin-bottom: 40px;
   margin-right: 20px;
   position: relative;
-  padding: 10px 16px;
+  padding-left: 5px;
   transform: translateX(46px); 
   /* background-color: rgba(225, 82, 61, 1); */
   border-radius: 7px;
