@@ -151,6 +151,7 @@ code {
   margin-left: 256px; /* Adjust margin to push content away from the navbar */
 }
 
+/* Admin Dashboard Page */
 .admin-dashboard-container {
   display: flex;
   flex: column;
@@ -167,6 +168,79 @@ code {
   font-size: 20px;
   font-weight: none;
 }
+
+/* Admin Courses Page */
+.admin-courses-container {
+  display: flex;
+  flex: column;
+}
+
+.admin-courses-content {
+  height: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+/* Course Page */
+.course-section {
+  height: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.course-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-form label {
+  margin-bottom: 5px;
+}
+
+.course-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+}
+
+.course-form button {
+  padding: 8px 12px;
+  background-color: rgba(0, 159, 121, 1);
+  color: white;
+  border: 1px solid rgba(0, 159, 121, 1);
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.course-form button:hover {
+  background-color: white;
+  color: rgba(0, 159, 121, 1);
+  border: 1px solid rgba(0, 159, 121, 1);
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
 
 
 .nav-link {
@@ -215,6 +289,7 @@ code {
   object-fit: cover;
 }
 
+/* Sign Out Button */
 .sign-out {
   /* display: flex; */
   align-items: center;
@@ -292,8 +367,7 @@ code {
   
 }
 
-
-/* Add/Remove Table */
+/* Add/Remove Users Table */
 .table-container {
   overflow-x: auto; /* Enable horizontal scrolling if table content exceeds container width */
   padding-top: 50px;
