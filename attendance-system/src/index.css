@@ -149,8 +149,25 @@ code {
   align-items: center;
   height: 100vh; /* Change to 100vh */
   margin-left: 256px; /* Adjust margin to push content away from the navbar */
-
 }
+
+.admin-dashboard-container {
+  display: flex;
+  flex: column;
+}
+
+.admin-dash-main-content {
+  height: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.admin-dash-main-content p {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: none;
+}
+
 
 .nav-link {
   display: inline-block;
@@ -199,14 +216,14 @@ code {
 }
 
 .sign-out {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   background-color: var(--green);
   color: white;
   border-radius: 10px;
   font-weight: bold;
   border: none;
-  margin: 2px 0 5px 0;
+  margin: 12px 0 5px 0;
   padding: 0 12px 0 12px;
   font-size: 12px;
   height: 35px;
