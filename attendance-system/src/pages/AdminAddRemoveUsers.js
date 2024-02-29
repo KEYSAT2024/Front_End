@@ -232,7 +232,7 @@ function AdminAddRemoveUsers() {
                         Admin Dashboard
                     </Link>
                     <Link to="/courses" className="nav-link">
-                        Courses
+                    Courses
                     </Link>
                     <Link to="/admin-add-remove-users" className="nav-link">
                         Students and Instructors

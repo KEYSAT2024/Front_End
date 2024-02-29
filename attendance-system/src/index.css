@@ -112,7 +112,7 @@ code {
   display: flex;
   padding-top: 34px;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: 256px;
   height: 94vh;
   background: rgba(0, 159, 121, 1);
@@ -127,7 +127,7 @@ code {
   height: 70px;
   position: absolute;
   bottom: 28px;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .navbar hr {
@@ -153,18 +153,16 @@ code {
 }
 
 .nav-link {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-size: 20px;
   /* font-weight: 700; */
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  margin-right: 20px;
   position: relative;
-  padding-right: 100px;
-  /* padding: 10px, 100px, 10px, 10px; */
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-  transform: translateX(46px);
+  padding: 10px 16px;
+  transform: translateX(46px); 
   /* background-color: rgba(225, 82, 61, 1); */
   border-radius: 7px;
   transition: ease-in 0.2s;
@@ -172,6 +170,7 @@ code {
 
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 1);
+  
   color: rgba(0, 159, 121, 1);
 }
 
