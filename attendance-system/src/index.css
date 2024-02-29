@@ -302,6 +302,17 @@ th {
   padding: 0 12px 0 12px;
   font-size: 12px;
   height: 35px;
+  cursor: pointer;
+  border: 2px solid var(--green);
+  /* transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; */
+}
+
+.sign-out:hover {
+  background: white;
+  color: var(--green);
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  border: 2px solid var(--green);
 }
 
 
