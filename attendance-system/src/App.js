@@ -6,6 +6,7 @@ import StudentDashboardPage from "./pages/StudentDashboardPage";
 import AdminDashboardPage from "./pages/AdminDashboardPage";
 import AdminCoursesPage from "./pages/AdminCoursesPage";
 import AdminAddRemoveUsers from "./pages/AdminAddRemoveUsers";
+import InstructorDashboardPage from "./pages/InstructorDashboardPage"
 import { AuthProvider } from "./auth/auth";
 import { RequireAuth } from "./components/RequireAuth";
 
@@ -44,6 +45,14 @@ function App() {
             element={
               <RequireAuth allowedRoles={["ROLE_ADMIN"]}>
                 <AdminAddRemoveUsers />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/instructor-dashboard"
+            element={
+              <RequireAuth allowedRoles={["ROLE_INSTRUCTOR"]}>
+                <InstructorDashboardPage />
               </RequireAuth>
             }
           />

@@ -57,7 +57,7 @@ function LoginPage() {
     if (authRoles.includes('ROLE_ADMIN')) {
       navigate('/admin-dashboard');
     } else if (authRoles.includes('ROLE_INSTRUCTOR')) {
-      navigate('/courses');
+      navigate('/instructor-dashboard');
     } else if (authRoles.includes('ROLE_USER')) {
       navigate('/student-dashboard');
     }
